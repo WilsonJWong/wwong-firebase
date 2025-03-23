@@ -13,9 +13,7 @@
           >
         </li>
         <li class="nav-item">
-          <router-link to="/addbook" class="nav-link" active-class="active"
-            >AddBook</router-link
-          >
+          <router-link to="/addbook" class="nav-link" active-class="active">AddBook</router-link>
         </li>
       </ul>
     </header>

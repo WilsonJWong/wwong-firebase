@@ -4,10 +4,12 @@
   <p><input type="password" placeholder="Password" v-model="password" /></p>
   <p><button @click="signin">Sign in via Firebase</button></p>
 </template>
+
 <script setup>
 import { ref } from 'vue'
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth'
 import { useRouter } from 'vue-router'
+
 const email = ref('')
 const password = ref('')
 const router = useRouter()
