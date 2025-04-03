@@ -1,13 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import FireView from '../views/FirebaseSigninView.vue'
+import FireLoginView from '../views/FirebaseSigninView.vue'
 import FireRegisterView from '../views/FirebaseRegisterView.vue'
-import AddBookView from '@/views/AddBookView.vue'
+import FireLogoutView from '../views/FirebaseLogoutView.vue'
+import GetBookCountView from '../views/GetBookCountView.vue'
 
 const routes = [
   {
     path: '/fireLogin',
     name: 'FireLogin',
-    component: FireView,
+    component: FireLoginView,
   },
   {
     path: '/fireRegister',
@@ -15,9 +16,14 @@ const routes = [
     component: FireRegisterView,
   },
   {
-    path: '/addBook',
-    name: 'AddBook',
-    component: AddBookView,
+    path: '/fireLogout',
+    name: 'FireLogout',
+    component: FireLogoutView,
+  },
+  {
+    path: '/GetBookCount',
+    name: 'GetBookCount',
+    component: GetBookCountView,
   },
 ]
 
